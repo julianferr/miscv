@@ -1,0 +1,57 @@
+Tuesday, Oct3
+
+Work:
+Design doc outline, design philosohy, performance definition, memory map. Some contribution in ISA implementation discussion.
+
+Decisions:
+Philosohy of fuctionality first, memory map of 3 segemtns, performance is speed, should have been 4 instruction types (now is 5).
+
+Memory Design Process:
+16-bit address bus 0xFFFF or 65536 addresses
+Minimum needed: Instruction Memory + Data Memory
+32 lines for Euclid, each 16 bit. 
+Decision: Word size one byte. 
+2 addresses for each instruction, 64 minimum
+Decision: 
+2^13 = 8192 = 0x2000 for instruction memory
+2^12 = 4096 = 0x1000 reserved
+The rest is data
+
+Next week tasks:
+Finish design doc
+
+Sunday, Oct8 - Wednesday, Oct11
+
+Work:
+Finished memory map, procedure call convention, translation of RelPrime to binary. RTL design of Y type. Some contribution in other RTL implementation discussion.
+
+Decisions:
+Procesure call convention based on RISC-V but adapted to our ISA. For pipelining RTL for branch save to PC might need changing.
+
+Next week tasks:
+Setup github repo, basic verilog code.
+
+Sunday, Oct15 - Wednesday, Oct18
+Work:
+Register file and Imm_Gen implementation. implementation and integration plans.
+Decisions:
+Register file is 8 registers with muxes for selection. Imm_Gen is 16 bit sign extention.
+Test plans were not fully done becuase block definitions were done late.
+Plans can change based on actual implementation progress since it's broken up.
+Next week:
+Test register file and imm gen. Do branch predictor.
+
+Thrusday, Oct19
+Work:
+General Version of implementation and integration test plans.
+Made excel version of block definitions to try to fix table.
+
+Tuesday, Oct24
+Work:
+Imm_Gen fix, tb in progress. Plans for branch predictor.
+
+Tuesday,Oct31
+Imm_Gen tests and more fix
+
+Wednesday, Nov1
+Imm_Gen fixes. Realied my understanding of bit position so far is all wrong. Numbers hard.
