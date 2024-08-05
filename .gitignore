@@ -132,3 +132,6 @@ implementation/simulation/
 *.vo
 
 implementation/MISC_V*
+design/*
+!design/CSSE 232 Design Doc.pdf
+FinalPresentation/*
